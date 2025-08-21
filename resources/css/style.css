@@ -12,8 +12,7 @@ header .logo {
     display: flex;
     height: 3rem;
 }
-
-header nav ul{;
+header nav ul{
     display: flex;
     align-items: center;
     list-style: none;
