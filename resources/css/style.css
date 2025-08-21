@@ -1,6 +1,8 @@
+body{
+ box-sizing: border-box;
+}
 header {
-    height:4rem;
-    padding: 0 1.5rem;
+    width: 100%;;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,10 +29,41 @@ header nav ul a:hover{
     text-decoration: underline;
     color: rgb(66, 225, 165);
 }
-
-footer{
-    display: block;
-    position: absolute;
-    bottom: 0;
+main{
+    box-sizing: border-box;
+    background-color: rgb(228, 226, 226);
+    display: flex;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    
+}
+main img{
+    width: 50%;
+}
+main h1{
+    color: rgb(92, 92, 92);
+    font-weight: bold;
+}
+main .hero-text{
+    display: flex;
+    flex-direction: column;
     padding: 1.5rem;
+}
+
+main .hero-text p{
+   font-size: 1.2rem;
+    color: rgb(66, 66, 66);
+}
+main .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 0.5rem;
+    flex-grow: 0;
+    padding: 1rem 4rem;
+    background-color: rgb(131, 131, 131);
+    color: white;
+    border: none;
+    font-weight: bold;
 }
