@@ -1,6 +1,9 @@
 body{
  box-sizing: border-box;
+ font-size: 16px;
+ color: rgb(92, 92, 92);
 }
+
 header {
     width: 100%;;
     display: flex;
@@ -12,8 +15,14 @@ header {
 }
 
 header .logo {
+    text-align: center;
     display: flex;
-    height: 3rem;
+    align-items: center;
+    font-size: 1.5rem;
+}
+header .logo img{
+    height: 3.5rem;
+
 }
 header nav ul{
     display: flex;
@@ -32,6 +41,8 @@ header nav ul a:hover{
     color: rgb(66, 225, 165);
 }
 main{
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     background-color: rgb(228, 226, 226);
     display: flex;
@@ -40,6 +51,7 @@ main{
 }
 main img{
     width: 60%;
+
     height: auto;
 }
 main h2{
@@ -74,11 +86,9 @@ main .button{
     font-weight: bold;
 }
 .info{
-    
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
 
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
     padding: 2rem ;
     width: 100%;
 }
@@ -143,7 +153,10 @@ main .button{
 .box_text p {
     margin-bottom: 0.5rem;
 }
-
+.rbutton{
+    text-decoration: none;
+    color: rgb(68, 151, 240);
+}
 #oldman{
     background-color: rgb(238, 238, 238);
 }
@@ -166,6 +179,7 @@ main .button{
     justify-content: center;
     padding: 2rem 2rem;
     box-sizing: border-box;
+    
 }
 .courses {
     display: flex;
@@ -175,7 +189,6 @@ main .button{
     justify-content: space-evenly; /* Centers courses horizontally */
     width: 100%;
     box-sizing: border-box;
-;
 }
 
 .course{
@@ -289,4 +302,149 @@ main .button{
     font-size: 1rem;
     font-weight: bold;
     color: rgb(85, 83, 83);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+footer li a{
+    display: flex;
+    text-decoration: none;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .desktop_image {
+        display: block; /* Shows the desktop image on larger screens */
+    }
+    .mobile_image {
+        display: none; /* Hides the mobile image on larger screens */
+    }
+    .mobile_header{
+        display: none;
+    }
+}
+@media (max-width: 767px) and (orientation: portrait) {
+    .desktop_header {
+        display: none; /* Hides the desktop header on smaller screens */
+    }
+    body{
+        font-size: 14px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: flex-start;
+        padding: 0;
+        /* Styles for mobile in portrait mode */
+    }
+    .hero img{
+        height: auto;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        align-items: center;
+        text-align: center;
+    }
+    .info_left{
+        display: none;
+    }
+    .info_right{
+        width: 100%;
+        padding: 0;
+    }
+    .info_box{
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        border: none;
+    }
+    .info_box img{
+    
+        width: 100%;
+        height: auto;
+        
+    }
+    .box_text{
+        text-align: left;
+        padding: 0 1rem;
+    }
+    .box_text h2{
+       font-weight: 700;
+    }
+    #oldman{
+        background-color: transparent;
+    }
+
+    .desktop_image {
+        display: none; /* Hides the desktop image on smaller screens */
+    }
+    .learning{
+        background-color: transparent;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .courses{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 0;
+        
+    }
+    .course {
+        box-sizing: border-box;
+        background-color: rgb(238, 238, 238);
+        width: 100%; /* Makes each course take full width on smaller screens */
+        margin-bottom: 0.5rem; /* Adds space between courses */
+    }
+    .course h3{
+        
+    }
+    .course p{
+        display: none;
+    }
+    .thesis{
+        text-align: center;
+        display: block;
+        width: 100%;
+        padding-bottom: 1rem;
+        margin: 0;
+    }
+    .thesis_media{
+        padding: 0;
+        display: block;
+        width: 100%;
+    }
+    .thesis .video {
+        width: 100%; /* Makes the video take full width on smaller screens */
+        padding: 0;
+    }
+    .video_text {
+        display: none; /* Hides the video text on smaller screens */
+    }
+    .thesis_images {
+       display: none; /* Hides the thesis images on smaller screens */
+    }
+    footer ul{
+        display: none;
+    }
 }
