@@ -131,6 +131,7 @@ main .button{
 }
 
 .box_text {
+
     flex-grow: 1; /* Allows text to take remaining space */
     line-height: 1; /* Adjusted from 0.5rem for better readability */
 }
@@ -205,4 +206,87 @@ main .button{
     color: rgb(61, 60, 60);
     font-weight: bold;
     font-size: 3.5rem;
+}
+
+.thesis{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1.5rem;
+}
+.thesis h1{
+    color: rgb(61, 60, 60);
+    font-weight: bold;
+    font-size: 3.5rem;
+    
+}
+
+.thesis_media{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    padding: 2rem 1.5rem;
+}
+
+.video {
+    width: 60%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.video video{   
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;    
+}
+.video_text {
+    width: 100%;
+}
+.video_text h1{
+    color: rgb(85, 83, 83);
+    font-size: 2rem;
+    font-weight: 500;
+}
+.video_text p{
+    color: rgb(85, 83, 83);
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+.thesis_images {
+    width: 40%;
+}
+
+.thesis_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Fixed width for uniformity */
+    margin-left: 1.5rem;
+    box-sizing: border-box;
+    background-color: white;
+    margin-bottom: 2rem; /* Adds space between boxes */;
+    background-color: rgb(238, 238, 238);
+}
+.thesis_box img{
+    width: 35%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.thesis_box h3{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(85, 83, 83);
+}
+.thesis_box p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(85, 83, 83);
 }
